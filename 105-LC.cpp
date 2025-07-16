@@ -2,27 +2,21 @@
 using namespace std;
 
 
-//  Definition for a binary tree node.
-
-// With std::map :
-
-//     Building the map : O(n log n)
-
-//                            n lookups during recursion : O(n log n)
+//Building the map : O(n log n)
+//n lookups during recursion : O(n log n)
 //Total : O(n log n)
 
-//                                                             With unordered_map :
 
-//     Building the map : O(n)
-
-//        n lookups during recursion : O(n)
+//With unordered_map :
+//Building the map : O(n)
+//n lookups during recursion : O(n)
 // Total : O(n)
 
 // Overall auxiliary space is :
+//O(n)
 
-//     O(n) 
-    
-    struct TreeNode
+// Definition for a binary tree node.
+struct TreeNode
 {
     int val;
     TreeNode *left;
